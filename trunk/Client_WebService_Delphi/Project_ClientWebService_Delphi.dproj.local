@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.975,=C:\Users\Marek\Desktop\Client_WebService_Delphi\WebService.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.957,C:\Users\Marek\Desktop\Client_WebService_Delphi\WebService.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.192,=C:\Users\Marek\Desktop\Client_WebService_Delphi\WebService.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.457,C:\Users\Marek\Desktop\Client_WebService_Delphi\Project_ClientWebService_Delphi.dproj=C:\Users\Marek\Documents\RAD Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.658,C:\Users\Marek\Desktop\Client_WebService_Delphi\form_glowna.dfm=C:\Users\Marek\Documents\RAD Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.736,=C:\Users\Marek\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.658,C:\Users\Marek\Desktop\Client_WebService_Delphi\form_glowna.pas=C:\Users\Marek\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

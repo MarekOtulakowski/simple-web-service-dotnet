@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\WebService\TestWebService\bin\Debug\TestWebService.dll.config
+C:\inetpub\wwwroot\WebService\TestWebService\bin\Debug\TestWebService.dll
+C:\inetpub\wwwroot\WebService\TestWebService\bin\Debug\TestWebService.pdb
+C:\inetpub\wwwroot\WebService\TestWebService\obj\Debug\TestWebService.dll
+C:\inetpub\wwwroot\WebService\TestWebService\obj\Debug\TestWebService.pdb
+C:\inetpub\wwwroot\WebService\TestWebService\obj\Debug\TestWebService.csprojResolveAssemblyReference.cache
