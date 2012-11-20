@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="makoff.webService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="makoff.webService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="makoff.webService">
+      <s:element name="Dodaj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DodajResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DodajResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Odejmij">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OdejmijResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OdejmijResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Pomnoz">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PomnozResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PomnozResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Podziel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PodzielResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PodzielResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DodajSoapIn">
+    <wsdl:part name="parameters" element="tns:Dodaj" />
+  </wsdl:message>
+  <wsdl:message name="DodajSoapOut">
+    <wsdl:part name="parameters" element="tns:DodajResponse" />
+  </wsdl:message>
+  <wsdl:message name="OdejmijSoapIn">
+    <wsdl:part name="parameters" element="tns:Odejmij" />
+  </wsdl:message>
+  <wsdl:message name="OdejmijSoapOut">
+    <wsdl:part name="parameters" element="tns:OdejmijResponse" />
+  </wsdl:message>
+  <wsdl:message name="PomnozSoapIn">
+    <wsdl:part name="parameters" element="tns:Pomnoz" />
+  </wsdl:message>
+  <wsdl:message name="PomnozSoapOut">
+    <wsdl:part name="parameters" element="tns:PomnozResponse" />
+  </wsdl:message>
+  <wsdl:message name="PodzielSoapIn">
+    <wsdl:part name="parameters" element="tns:Podziel" />
+  </wsdl:message>
+  <wsdl:message name="PodzielSoapOut">
+    <wsdl:part name="parameters" element="tns:PodzielResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="Dodaj">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Funkcja dodawania, poprawne wywołanie Dodaj(int x, int y)&lt;br /&gt;Zwraca int jako wynik, liczba całkowita</wsdl:documentation>
+      <wsdl:input message="tns:DodajSoapIn" />
+      <wsdl:output message="tns:DodajSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Odejmij">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Funkcja odejmowania, poprawne wywołanie Odejmij(int x, int y)&lt;br /&gt;Zwraca int jako wynik, liczba całkowita</wsdl:documentation>
+      <wsdl:input message="tns:OdejmijSoapIn" />
+      <wsdl:output message="tns:OdejmijSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Pomnoz">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Funkcja mnożenia, poprawne wywołanie Pomnoz(int x, int y)&lt;br /&gt;Zwraca int jako wynik, liczba całkowita</wsdl:documentation>
+      <wsdl:input message="tns:PomnozSoapIn" />
+      <wsdl:output message="tns:PomnozSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Podziel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Funkcja dzielenia, poprawne wywołanie Podziel(int x, int y)&lt;br /&gt;Zwraca int jako wynik, liczba całkowita</wsdl:documentation>
+      <wsdl:input message="tns:PodzielSoapIn" />
+      <wsdl:output message="tns:PodzielSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Dodaj">
+      <soap:operation soapAction="makoff.webService/Dodaj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Odejmij">
+      <soap:operation soapAction="makoff.webService/Odejmij" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pomnoz">
+      <soap:operation soapAction="makoff.webService/Pomnoz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Podziel">
+      <soap:operation soapAction="makoff.webService/Podziel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Dodaj">
+      <soap12:operation soapAction="makoff.webService/Dodaj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Odejmij">
+      <soap12:operation soapAction="makoff.webService/Odejmij" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pomnoz">
+      <soap12:operation soapAction="makoff.webService/Pomnoz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Podziel">
+      <soap12:operation soapAction="makoff.webService/Podziel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost:100/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost:100/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,8 @@
+C:\Users\Marek\Desktop\Client_WebService_CSharp\Client_WebService_CSharp\bin\Debug\Client_WebService_CSharp.exe.config
+C:\Users\Marek\Desktop\Client_WebService_CSharp\Client_WebService_CSharp\bin\Debug\Client_WebService_CSharp.exe
+C:\Users\Marek\Desktop\Client_WebService_CSharp\Client_WebService_CSharp\bin\Debug\Client_WebService_CSharp.pdb
+C:\Users\Marek\Desktop\Client_WebService_CSharp\Client_WebService_CSharp\obj\Debug\Client_WebService_CSharp.F_Glowna.resources
+C:\Users\Marek\Desktop\Client_WebService_CSharp\Client_WebService_CSharp\obj\Debug\Client_WebService_CSharp.Properties.Resources.resources
+C:\Users\Marek\Desktop\Client_WebService_CSharp\Client_WebService_CSharp\obj\Debug\Client_WebService_CSharp.csproj.GenerateResource.Cache
+C:\Users\Marek\Desktop\Client_WebService_CSharp\Client_WebService_CSharp\obj\Debug\Client_WebService_CSharp.exe
+C:\Users\Marek\Desktop\Client_WebService_CSharp\Client_WebService_CSharp\obj\Debug\Client_WebService_CSharp.pdb
